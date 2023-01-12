@@ -70,21 +70,11 @@
           <li><a class="nav-link scrollto" href="#services">Perawatan</a></li>
           <li><a class="nav-link scrollto" href="#departments">Layanan</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="#appointment">Booking</a></li>
+      
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
@@ -306,60 +296,79 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Booking</h2>
         </div>
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Nama Pasien</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="Nama Anda">
           </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pilih Dokter</label>
+          <div class="col-sm-10">
+            <select class="form-control">
+              <option value="Doctor 1">Drg. Nasywa Kailailah Fathin</option>
+                <option value="Doctor 2">Drg.Zora Khansa</option>
+                <option value="Doctor 3">Drg.Siti Aisyah</option>
+                <option value="Doctor 3">Drg.Parida Ristiani</option>
+            </select>
+          </div>
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pilih Layanan</label>
+          <div class="col-sm-10">
+            <select class="form-control">
+              <option value="Doctor 1">Memutihkan Gigi</option>
+                <option value="Doctor 2">Behel Gigi</option>
+                <option value="Doctor 3">Pembersih Karang Gigi</option>
+                <option value="Doctor 3">Tambal Gigi</option>
+                <option value="Doctor 3">Veneer Gigi</option>
+            </select>
+          </div>
+          <form class="was-validated">
+            <div class="mb-3">
+              <label>Keluhan</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
             </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pembayaran</label>
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Cash</label>
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Transfer</label>
+           <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">eWallet</label>
+      </div>
+        <div class="row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Tanggal Periksa</label>
+           <div class="col-md-4 form-group mt-3">
+             <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+           <div class="validate"></div>
+         </div>
+         <div class="form-group row">
+           <label for="colFormLabel" class="col-sm-2 col-form-label">Umur</label>
+             <div class="col-sm-10">
+               <input type="number" class="form-control" id="colFormLabel" placeholder="">
+           </div>
+           <div class="form-group row">
+             <label for="colFormLabel" class="col-sm-2 col-form-label">Telpon/HP</label>
+               <div class="col-sm-10">
+                <input type="number" class="form-control" id="colFormLabel" placeholder="Telpon Anda">
+             </div>
+             <div class="form-group row">
+               <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                 <input type="email" class="form-control" id="colFormLabel" placeholder="Email Anda">
+               </div>
+           </div>
+          </div>
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          <input class="btn btn-success" type="submit" value="Submit">
         </form>
 
       </div>
@@ -475,7 +484,7 @@
               <div class="member-info">
                 <h4>drg.Nasywa Kalailah</h4>
                 <span>Spesialis Bedah Mulut</span>
-                <p>Meliputi pencabutan, operasi gigi bungsu, penanganan masalah tumor pada area terkait, operasi celah bibir, dan perbaikan tulang rahang yang mungkin terjadi akibat kecelakaan.</p>
+                <p>Meliputi pencabutan, operasi gigi bungsu,operasi celah bibir, dan perbaikan tulang rahang yang mungkin terjadi akibat kecelakaan.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -809,38 +818,6 @@
 
             </div>
 
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama Kamu" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Alamat Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Pesan" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
