@@ -1,511 +1,908 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Napz Clinic - Backend</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <title>Napz Clinic</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v4.10.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
 
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">Napzclinic@gmail.com</a>
+        <i class="bi bi-phone"></i> 02182753233
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://github.com/Nasywakalailah/Napz-Clinic" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://youtu.be/-bya4LW6yEE" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://instagram.com/_.uwaaa_?igshid=NTdlMDg3MTY=" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </li>
+      <h1 class="logo me-auto"><a href="admin.html">Napz Clinic</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-light elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Zora Admin</a>
-        </div>
-      </div>
-
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="index.html" class="nav-link active">
-              <i class="nav-icon fas calendar-empty"></i>
-              <p>
-                Booking
-              </p>
-            </a> 
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#services">Perawatan</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Layanan</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Dokter</a></li>
+          <li><a class="nav-link scrollto" href="#appointment">Booking</a></li>
+      
+            <ul>
+                <ul>
+                </ul>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a href="dataDokter.html" class="nav-link">
-              <i class="nav-icon fas fa-plane-departure"></i>
-              <p>
-                Dokter</p>
-            </a> 
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list"></i>
-              <p>
-                Perawatan
-              </p>
-            </a> 
-          </li>
+          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Admin - Napz Clinic</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Booking</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+      <a href="login.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</a>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Napz Clinic</h1>
+      <h2>Semua kebutuhan perawatan gigi ada di Napz Clinic </h2>
+      <a href="#about" class="btn-get-started scrollto">Pilih Perawatan</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Kenapa Harus Napz Clinic?</h3>
+              <p>
+                Miliki penampilan terbaik Anda dengan perawatan gigi di Napz Clinic. Kami memiliki berbagai macam layanan kesehatan gigi, ortodontik dan layanan estetik lainnya yang membantu Anda mendapatkan senyum sehat percaya diri.
+              </p>
+              <div class="text-center">
+              </div>
+            </div>
           </div>
-          <!-- ./col -->
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fa-solid fa-tooth"></i>
+                    <h4>Teknologi Modern</h4>
+                    <p>Napz Clinic memiliki alat canggih sehingga membantu anda untuk pemeriksaan gigi dan mengecek kondisi kesehatan gigi anda.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <h4>Dokter Gigi Profesional</h4>
+                    <p>Dokter-dokter gigi Napz clinic merupakan dokter gigi terbaik, profesional dan berpengalaman di bidangnya sehingga kamu bisa berkonsultasi langsung.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <h4>Harga Terjangkau</h4>
+                    <p>Napz Clinic akan memberikan pelayaan kesehatan gigi dan mulut dengan harga terjangkau untuk memastikan anda mendapatkan solusi atas masalah gigi yang anda alami.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
         </div>
-        <!-- /.row -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>
-               Daftar Booking
-              </h3> 
-              <button type="button" class="btn btn-success">
-                Tambah
-              </button>
-              <br>
-              <table class="table">
-                <br>
-                <thead>
-                  <tr>
-                    <th>
-                      No.
-                    </th>
-                    <th>
-                      Tanggal 
-                    </th>
-                    <th>
-                      Nama Pasien
-                    </th>
-                    <th>
-                      HP Pasien
-                    </th>
-                    <th>
-                      Dokter
-                    </th>
-                    <th>
-                      Layanan
-                    </th>
-                    <th>
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      1
-                    </td>
-                    <td>
-                      14/01/2023
-                    </td>
-                    <td>
-                      Dewi
-                    </td>
-                    <td>
-                      0894267668648
-                    </td>
-                    <td>
-                      drg. Nasywa Kalailah Fatin
-                    </td>
-                    <td>
-                      Memutihkan Gigi
-                    </td>
 
-                    <td>
-                      Detail | Edit | Delete
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      2
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                    
-                    </td>
-                    <td>
+      </div>
+    </section><!-- End Why Us Section -->
 
-                    </td>
-                    <td>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
 
-                    </td>
-                    <td>
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://youtu.be/-bya4LW6yEE" class="glightbox play-btn mb-4"></a>
+          </div>
 
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      3
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Klinik Gigi Napz Menjangkau Pasien Lebih Dekat</h3>
+            <p>Mengedepankan customer experience, Napz Clinic terus berusaha memberikan pelayanan terbaik  agar setiap orang dari seluruh lapisan masyarakat memiliki kesempatan yang sama untuk mendapatkan edukasi, serta perawatan gigi dan mulut yang layak.</p>
 
-                    </td>
-                    <td>
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-users"></i></div>
+              <h4 class="title">Misi Sosial</a></h4>
+              <p class="description">Kami mengusung misi sosial</p>
+            </div>
 
-                    </td>
-                    <td>
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-hospital"></i></div>
+              <h4 class="title">Konsep Unik, Fasilitas Nyaman</a></h4>
+              <p class="description">Kami menyediakan layanan A sampai Z yang sempurna</p>
+            </div>
 
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      4
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-user-clock"></i></div>
+              <h4 class="title">Reservasi Desta/Tistan</a></h4>
+              <p class="description">Kami sesuaikan dengan waktu anda</p>
+            </div>
 
-                    </td>
-                    <td>
+          </div>
+        </div>
 
-                    </td>
-                    <td>
+      </div>
+    </section><!-- End About Section -->
 
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      5
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
 
-                    </td>
-                    <td>
+        <div class="row">
 
-                    </td>
-                    <td>
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Dokter</p>
+            </div>
+          </div>
 
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      6
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                    
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="far fa-hospital"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Cabang</p>
+            </div>
+          </div>
 
-                    </td>
-                    <td>
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-flask"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Ruangan</p>
+            </div>
+          </div>
 
-                    </td>
-                    <td>
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Penghargaan</p>
+            </div>
+          </div>
 
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Perawatan</h2>
+          <p>Punya masalah gigi dan bingung ingin perawatan apa?
+
+            Lihat semua perawatan gigi yang ada di Napz Clinic.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+              <h4><a href="konsultasi.html">Konsultasi Gigi</a></h4>
+              <p>Konsultasi dengan dokter gigi di klinik dan pengecekan kondisi gigi menggunakan kamera intra oral.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-sharp fa-solid fa-teeth"></i></div>
+              <h4><a href="memutihkan gigi.html">Memutihkan Gigi</a></h4>
+              <p>Sering disebut juga teeth whitening dan bleaching, mengembalikan warna gigi dari kuning ke warna asli gigi.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4><a href="Behel gigi.html">Behel Gigi </a></h4>
+              <p>Merapikan gigi dan dalam prosesnya menggerakkan gigi secara perlahan sampai pada posisi gigi yang ideal atau rapi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-sharp fa-solid fa-pump-medical"></i></div>
+              <h4><a href="pembersihan karang gigi.html">Pembersihan Karang Gigi</a></h4>
+              <p>Pembersihan karang gigi atau lebih dikenal dengan scaling umum dilakukan karena karang gigi tidak mudah dibersihkan meski sudah menggosok gigi setiap hari.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-tooth"></i></div>
+              <h4><a href="tambal gigi.html">Tambal Gigi</a></h4>
+              <p>Perawatan yang bertujuan untuk mengembalikan bentuk dan fungsi gigi yang berlubang atau rusak ke aslinya, menggunakan bahan porselen atau komposit.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h4><a href="veneer gigi.html">Veneer Gigi</a></h4>
+              <p>Prosedur perawatan yang bertujuan untuk memperbaiki gigi yang berubah warna, patah, rusak serta tidak sejajar. Tersedia veneer direct dan veneer indirect.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Booking</h2>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Nama Pasien</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="Nama Anda">
+          </div>
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pilih Dokter</label>
+          <div class="col-sm-10">
+            <select class="form-control">
+              <option value="Doctor 1">Drg. Nasywa Kailailah Fathin</option>
+                <option value="Doctor 2">Drg.Zora Khansa</option>
+                <option value="Doctor 3">Drg.Siti Aisyah</option>
+                <option value="Doctor 3">Drg.Parida Ristiani</option>
+            </select>
+          </div>
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pilih Layanan</label>
+          <div class="col-sm-10">
+            <select class="form-control">
+              <option value="Doctor 1">Memutihkan Gigi</option>
+                <option value="Doctor 2">Behel Gigi</option>
+                <option value="Doctor 3">Pembersih Karang Gigi</option>
+                <option value="Doctor 3">Tambal Gigi</option>
+                <option value="Doctor 3">Veneer Gigi</option>
+            </select>
+          </div>
+          <form class="was-validated">
+            <div class="mb-3">
+              <label>Keluhan</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Pembayaran</label>
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Cash</label>
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Transfer</label>
+           <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">eWallet</label>
+      </div>
+        <div class="row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Tanggal Periksa</label>
+           <div class="col-md-4 form-group mt-3">
+             <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+           <div class="validate"></div>
+         </div>
+         <div class="form-group row">
+           <label for="colFormLabel" class="col-sm-2 col-form-label">Umur</label>
+             <div class="col-sm-10">
+               <input type="number" class="form-control" id="colFormLabel" placeholder="">
+           </div>
+           <div class="form-group row">
+             <label for="colFormLabel" class="col-sm-2 col-form-label">Telpon/HP</label>
+               <div class="col-sm-10">
+                <input type="number" class="form-control" id="colFormLabel" placeholder="Telpon Anda">
+             </div>
+             <div class="form-group row">
+               <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                 <input type="email" class="form-control" id="colFormLabel" placeholder="Email Anda">
+               </div>
+           </div>
+          </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <div class="validate"></div>
+          </div>
+          <button><a href="index.html">Submit</a></button>
+        </form>
+
+      </div>
+    </section><!-- End Appointment Section -->
+
+    <!-- ======= Layanan Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Layanan</h2>
+          <p>Berikut ini beberapa layanan umum yang ada di Napz Clinic</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Memutihkan Gigi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Behel Gigi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pembersihan Karang Gigi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Tambal Gigi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Veneer Gigi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Memutihkan Gigi</h3>
+                    <p>Pemutihan gigi adalah prosedur untuk mencerahkan gigi dengan menghilangkan noda pada permukaan gigi. Terdapat 2 jenis prosedur, yaitu in office (dilakukan di klinik gigi) dan home bleaching (dilakukan sendiri di rumah). Pembeda dari keduanya terletak pada bahan yang digunakan dan efektivitas atau hasil yang akan didapat. Biasanya prosedur pemutihan gigi ini kerap banyak dipilih karena hasil yang didapat lebih instan, apabila dilakukan in office waktu yang dibutuhkan pun hanya 1 kali kunjungan dengan durasi 1-2 jam.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Behel Gigi</h3>
+                    <p>Tujuan pemasangan behel atau kawat gigi, yaitu memperbaiki susunan gigi yang tidak ideal. Perawatan behel ini biasanya dilakukan dalam jangka waktu 1-3 tahun bergantung dari ketekunan pasien dalam merawat kawat giginya. Jenis behel yang digunakan pun beragam yang disesuaikan dengan kebutuhan. Pemasangan behel gigi sebaiknya dilakukan oleh dokter gigi spesialis yang ahli dan berpengalaman di bidangnya untuk mendapatkan hasil yang maksimal.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pembersihan Karang Gigi</h3>
+                    <p>Membersihkan gigi bukan hanya dilakukan sendiri di rumah, lho. Membersihkan gigi dari plak harus dilakukan oleh dokter gigi minimal enam bulan sekali. Bukan hanya plak, ada juga karang gigi yang lebih berbahaya. Karang gigi adalah penumpukan plak keras yang terbentuk pada gigi. Karang gigi ini terbentuk di bawah dan di atas garis gusi. Satu-satunya cara untuk menghilangkan kotoran ini adalah menemui dokter gigi untuk pembersihan gigi profesional. Membersihkan gigi secara teratur juga penting untuk menjaga kesehatan gigi dan gusi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/department-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tambal Gigi</h3>
+                    <p>Menambal gigi merupakan layanan yang paling umum ada di klinik gigi Surabaya dan paling sering dibutuhkan. Prosedur ini dilakukan untuk memperbaiki gigi rusak atau berlubang. Metode penambalan dan bahan yang akan digunakan biasanya akan disesuaikan dengan kondisi gigi pasien</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Veneer Gigi</h3>
+                    <p>Veneer merupakan lapisan tipis berbahan komposit atau porcelen yang dipasang pada permukaan gigi. Prosedur veneer dilakukan untuk memperbaiki bentuk gigi yang tidak proporsional serta mengamuflase noda di permukaan gigi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/department-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
+    </section><!-- End Departments Section -->
+
+    <!-- ======= Dokter Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Dokter</h2>
+          <p>Dokter-dokter gigi di Napz Clinic merupakan dokter-dokter gigi terbaik, profesional dan berpengalaman di bidangnya. Kamu bisa konsultasi langsung.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4><a href="dokter1.html">drg.Nasywa Kalailah</a></h4>
+                <span>Spesialis Bedah Mulut</span>
+                <p>Meliputi pencabutan, operasi gigi bungsu,operasi celah bibir, dan perbaikan tulang rahang yang mungkin terjadi akibat kecelakaan.</p>
+                <div class="social">
+                  <a href="https://github.com/Nasywakalailah"><i class="ri-github-fill"></i></a>
+                  <a href="https://instagram.com/_.uwaaa_?igshid=NTdlMDg3MTY="><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/nasywa-kalailah-88aa61253/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4> <a href="dokter2.html">drg.Zora Khansa</a> </h4>
+                <span>Spesialis Kedokteran Gigi Anak</span>
+                <p>Untuk menangani semua permasalahan gigi dan mulut pada anak.Karena jumlah dan sifat gigi anak yang berbeda, dokter spesialis gigi anak juga mempelajari psikologi anak.</p>
+                <div class="social">
+                  <a href="https://github.com/zora724"><i class="ri-github-fill"></i></a>
+                  <a href="https://instagram.com/zoraakhns?igshid=Yzg5MTU1MDY="><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/zora-khansa-5a0a37258"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4><a href="dokter3.html">drg.Siti Aisyah</a></h4>
+                <span>Spesialis Konservasi Gigi</span>
+                <p>Untuk menangani perawatan saluran saraf gigi dan pembuatan veneer dan pemutihan gigi karena untuk mempertahankan fungsi dan estetika gigi selama mungkin.</p>
+                <div class="social">
+                  <a href="https://github.com/Aisyah6"><i class="ri-github-fill"></i></a>
+                  <a href="https://instagram.com/siaisyah9749?igshid=Yzg5MTU1MDY="><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/siti-aisah-9827a4258"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4><a href="dokter4.html">drg. Parida Ristiani</a></h4>
+                <span>Spesialis Ortodonti</span>
+                <p>Untuk perawatan gigi kawat, aligner, atau penggunaan behel lepas pasang karena spesialisasi dokter dalam bidang ini untuk menguasai masalah kelainan perkembangan gigi.</p>
+                <div class="social">
+                  <a href="https://github.com/Paridatanjung/Pemweb01.git"><i class="ri-github-fill"></i></a>
+                  <a href="https://instagram.com/daa.tanjung?igshid=Yzg5MTU1MDY="><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/mwlite/in/parida-tanjung-846a80258"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pertanyaan Seputar Kesehatan Gigi</h2>
+          <p>Tubuh yang sehat menjadi penting demi keberhasilan dalam kehamilan. Gigi dan gusi yang sehat bukan pengecualian dan kurangnya kesehatan di area ini bisa memicu masalah bagi Anda dan bayi. Bahkan gigi yang sehat bisa mengalami masalah seiring waktu. Menggosok gigi secara teratur menjadi awal yang baik, tapi untuk mengetahui kondisi gigi secara lengkap, pemeriksaan teratur sangatlah penting.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Saya Tidak Merasakan Sakit, Tidak Ada Pendarahan, Dan Saya Merasa Tidak Ada Yang Salah, Apakah Saya Masih Perlu Ke Dokter Gigi Untuk Memeriksakan Gigi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Banyak masalah pada gigi dan gusi tidak terasa sakit hingga kondisi tersebut menjadi semakin rumit dan memakan biaya banyak untuk diatasi. Uang terbaik yang dihabiskan di klinik gigi adalah untuk pemeriksaan secara teratur. Diagnosa yang Anda lakukan sendiri untuk masalah gigi dan gusi sangat tidak bisa dipercaya.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bagaimana Cara Mengetahui Dokter Gigi Yang Baik? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Anda akan merasa nyaman dengannya, ia harus punya waktu untuk mendengarkan dan menjelaskan pertanyaan Anda. Jika mulut Anda memerlukan perhatian, Anda akan disarankan tentang apa yang perlu dilakukan, apa yang baik, dan efek apa yang Anda punya pada bayi. Jangan takut untuk menanyakan prediksi harga. Tak apa jika Anda perlu mencari second opinion. Anda sebaiknya menyiapkan daftar pertanyaan sebelum bertemu dokter gigi agar tidak lupa untuk menanyakannya.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Gusi Saya Berdarah, Apakah Itu Normal?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Kondisi ini paling sering terjadi antara kehamilan usia 2 hingga 8 bulan, dan 30 hingga 100 persen akan mengalami gusi berdarah. Ini bisa dicegah dengan melakukan perawatan di rumah atau pembersihan oleh dokter gigi. Gusi yang berdarah dikarenakan peningkatan hormon estrogen dan progesteron, yang membuat gusi menjadi lebih sensitif.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Apa Yang Bisa Saya Lakukan Di Rumah Untuk Mengatasi Gusi Yang Berdarah?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dokter gigi Anda memerlukan lebih dari satu kali kunjungan untuk mengatasi masalah pada gusi. Penting untuk mengikuti aturan kebersihan saat menggosok gigi, penggunaan benang gigi, dan cara membilas yang sesuai. Dokter gigi bisa menyarankan langkah yang tepat bagi Anda. Penggunaan benang gigi dinilai cukup efektif untuk mengatasi masalah ini. Selain itu, pola makan sehat yang seimbang bisa menghilangkan kemungkinan kekurangan nutrisi.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Saya Mengalami Morning Sick Dan Selalu Muntah, Apakah Ini Buruk Bagi Gigi Saya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Asam dari perut bisa benar-benar merusak gigi, bahkan refluks yang umum  bisa menyebabkan erosi pada email gigi, membuat gigi sensitif dan rentan terhadap kerusakan.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Ahmad</h3>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Kita nyengir terus karna Napz Clinic.Thank you klinik gigi yang paling cute!!Gigi kita jadi kinclong dan bersih lagi karena Napz Clinic.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Dinda</h3>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                     Tempatnya super nyaman dan bikin happy banget.Proses perawatan cepat dan selalu bikin cengar cengir sendiri setelahnya :) Thank you Napz Clinic.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Maya</h3>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Thank you.Napz Clinic selalu melayani dengan penuh ketulusan dan diimbangi dengan kerja keras penuh ke ikhlasan,itu yang membuat Napz bisa sampai seperti ini.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Dimas</h3>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Seneneng banget bisa ke Napz Clinic dengan harga terjangkau saya sudah memperbaiki gigi saya yang rusak.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>David</h3>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Seneng bisa berkunjung ke Napz Clinic tempatnya sangat nyaman dan dokter yang ramah.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Beberapa Dokumentasi Galeri Kami</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpeg class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-2.jpeg" alt="" class="img-fluid" >
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Kontak</h2>
+          <p>Pilih perawatan yang kamu inginkan dan buat jadwal temu dengan dokter gigi melalui kontak Napz Clinic.  Kamu bisa reservasi di klinik gigi terdekat dan cabang Npaz Clinic yang tersebar di Jakarta, Bogor, Depok, Tangerang.</p>
+        </div>
+      </div>
+
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126881.56931711787!2d106.7477558970349!3d-6.387673211650603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95620a297d3%3A0x1cfd4042316fb217!2sKota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1673319553265!5m2!1sid!2sid" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Lokasi:</h4>
+                <p>Kel.Depok, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16431</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>Napzclinic@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>02182753233</p>
+              </div>
+
+            </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Napz Clinic</h3>
+            <p>
+              Kelurahan Depok<br>
+              Kecamatan Pancoran Mas<br>
+              Jawa Barat 16431 <br><br>
+              <strong>Phone:</strong> 02182753233<br>
+              <strong>Email:</strong> Napzclinic@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+    <div class="container d-md-flex py-4">
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Napz Clinic</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+          Designed by <a href="http://localhost/Project%202/Napz-Clinic/Medilab/index.html">Napz Clinic</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/Nasywakalailah/Napz-Clinic" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://instagram.com/_.uwaaa_?igshid=NTdlMDg3MTY=" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://youtu.be/-bya4LW6yEE" class="youtube"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

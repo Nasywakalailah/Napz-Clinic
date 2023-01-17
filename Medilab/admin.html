@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Napz Clinic - Backend</title>
 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -99,7 +103,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="assets/img/favicon.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -188,7 +192,7 @@
           <img src="assets/img/favicon.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Napz-Clinic Admin</a>
+          <a href="#" class="d-block">Napz Admin</a>
         </div>
       </div>
 
@@ -210,7 +214,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="admin.html" class="nav-link">
+            <a href="admin.html" class="nav-link active">
               <i class="nav-icon fas calendar-empty"></i>
               <p>
                 Booking
@@ -218,7 +222,7 @@
             </a> 
           </li>
           <li class="nav-item">
-            <a href="dataDokter.html" class="nav-link active">
+            <a href="dataDokter.html" class="nav-link">
               <i class="nav-icon fas fa-plane-departure"></i>
               <p>
                 Dokter</p>
@@ -250,8 +254,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active">Dokter</li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Booking</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -273,7 +277,7 @@
           <div class="row">
             <div class="col-md-12">
               <h3>
-               Data Kelola Dokter
+               Daftar Booking
               </h3> 
               <button type="button" class="btn btn-success">
                 Tambah
@@ -287,16 +291,19 @@
                       No.
                     </th>
                     <th>
-                      Nama Dokter
+                      Tanggal 
                     </th>
                     <th>
-                      Gender
+                      Nama Pasien
                     </th>
                     <th>
-                      Keahlian
+                      HP Pasien
                     </th>
                     <th>
-                      Telpon
+                      Dokter
+                    </th>
+                    <th>
+                      Layanan
                     </th>
                     <th>
                       Action
@@ -309,17 +316,21 @@
                       1
                     </td>
                     <td>
-                      drg. Nasywa Kalailah 
+                      14/01/2023
                     </td>
                     <td>
-                      Perempuan
+                      Dewi
                     </td>
                     <td>
-                      Spesialis Bedah Mulut
+                      0894267668648
                     </td>
                     <td>
-                      0813873637637
+                      drg. Nasywa Kalailah
                     </td>
+                    <td>
+                      Operasi Gigi Bungsu
+                    </td>
+
                     <td>
                       Detail | Edit | Delete
                     </td>
@@ -329,19 +340,22 @@
                       2
                     </td>
                     <td>
-                      drg. Zora Khansa
+                      
                     </td>
                     <td>
-                      Perempuan
+                      
                     </td>
                     <td>
-                      Spesialis Gigi Anak
+                    
                     </td>
                     <td>
-                      0892876746476
+
                     </td>
                     <td>
-                      Detail | Edit | Delete
+
+                    </td>
+                    <td>
+
                     </td>
                   </tr>
                   <tr>
@@ -349,19 +363,22 @@
                       3
                     </td>
                     <td>
-                      drg. Siti Aisyah
+                     
                     </td>
                     <td>
-                      Perempuan
+                     
                     </td>
                     <td>
-                      Spesialis Konservasi Gigi
+                     
                     </td>
                     <td>
-                      081687479240
+
                     </td>
                     <td>
-                      Detail | Edit | Delete
+
+                    </td>
+                    <td>
+
                     </td>
                   </tr>
                   <tr class="table-active">
@@ -369,19 +386,68 @@
                       4
                     </td>
                     <td>
-                      drg. Parida Ristiani
+                      
                     </td>
                     <td>
-                      Perempuan
+                     
                     </td>
                     <td>
-                      Spesialis Ortodonti
+                     
                     </td>
                     <td>
-                      0897866254434
+
                     </td>
                     <td>
-                      Detail | Edit | Delete
+
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      5
+                    </td>
+                    <td>
+                     
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                     
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                  <tr class="table-active">
+                    <td>
+                      6
+                    </td>
+                    <td>
+                     
+                    </td>
+                    <td>
+                    
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
                     </td>
                   </tr>
                 </tbody>
@@ -396,7 +462,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">Admin Napz-Clinic</a>.</strong>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">Admin Napz</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.2.0
