@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Napz Clinic - Backend</title>
+  <title>Napz Clinic | Data Dokter</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <script src="https://kit.fontawesome.com/5ef359b4dc.js" crossorigin="anonymous"></script>
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
@@ -103,7 +104,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="assets/img/favicon.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -180,8 +181,8 @@
   <aside class="main-sidebar sidebar-light elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Napz Clinic Admin</span>
+      <img src="dist/img/napz logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Napz Clinic</span>
     </a>
 
     <!-- Sidebar -->
@@ -189,7 +190,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="assets/img/favicon.png" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/avatar6.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Napz Admin</a>
@@ -214,27 +215,35 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="admin.html" class="nav-link active">
-              <i class="nav-icon fas calendar-empty"></i>
+            <a href="dashboard.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="booking.html" class="nav-link">
+              <i class="nav-icon fas fa-regular fa-table"></i>
               <p>
                 Booking
-              </p>
+            </p>
             </a> 
           </li>
           <li class="nav-item">
-            <a href="dataDokter.html" class="nav-link">
-              <i class="nav-icon fas fa-plane-departure"></i>
+            <a href="dokter.html" class="nav-link active">
+              <i class="nav-icon fas fa-solid fa-user-nurse"></i>
               <p>
-                Dokter</p>
-            </a> 
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list"></i>
-              <p>
-                Perawatan
+                Dokter
               </p>
             </a> 
+          </li>
+          <li class="nav-header">Auth</li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="nav-icon far fa-arrow-alt-circle-right"></i>
+                        <p>Logout</p>
+                </a>
           </li>
         </ul>
       </nav>
@@ -250,219 +259,177 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Admin - Napz Clinic</h1>
+            <h1 class="m-0">Admin-Napz Clinic</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Booking</li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+              <li class="breadcrumb-item active"><a href="dokter.html">Dokter</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-          </div>
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
+     <!-- Main Content - Booking -->
+     <section class="content">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>
-               Daftar Booking
-              </h3> 
-              <button type="button" class="btn btn-success">
-                Tambah
-              </button>
-              <br>
-              <table class="table">
-                <br>
-                <thead>
-                  <tr>
-                    <th>
-                      No.
-                    </th>
-                    <th>
-                      Tanggal 
-                    </th>
-                    <th>
-                      Nama Pasien
-                    </th>
-                    <th>
-                      HP Pasien
-                    </th>
-                    <th>
-                      Dokter
-                    </th>
-                    <th>
-                      Layanan
-                    </th>
-                    <th>
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      1
-                    </td>
-                    <td>
-                      14/01/2023
-                    </td>
-                    <td>
-                      Dewi
-                    </td>
-                    <td>
-                      0894267668648
-                    </td>
-                    <td>
-                      drg. Nasywa Kalailah
-                    </td>
-                    <td>
-                      Operasi Gigi Bungsu
-                    </td>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Kelola Data Dokter</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary mb-3" data-toggle="modal"
+                                data-target="#tambah">
+                                Tambah
+                            </button>
 
-                    <td>
-                      Detail | Edit | Delete
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      2
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                    
-                    </td>
-                    <td>
+                            <!-- Modal -->
+                            <div class="modal fade" id="tambah" tabindex="-1" role="dialog"
+                                aria-labelledby="tambah" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tambah">Tambah</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="montir">Nama Dokter</label>
+                                                    <input type="text" class="form-control" id="montir"
+                                                        placeholder="Nama dokter" />
+                                                </div>
 
-                    </td>
-                    <td>
+                                                <div class="form-group">
+                                                    <label for="Kemampuan">Gender</label> <br>
+                                                    <input type="radio" name="Gender" id=""> Perempuan
+                                                    <input type="radio" name="Gender" id=""> Laki-Laki
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kategori">Keahlian</label>
+                                                    <select class="form-control" name="" id="kategori">
+                                                        <option value="Keahlian 1">Spesialis Bedah Mulut</option>
+                                                        <option value="Keahlian 2">Spesialis Kedokteran Gigi Anak</option>
+                                                        <option value="Keahlian 3">Spesialis Konservasi Gigi</option>
+                                                        <option value="Keahlian 4">Spesialis Ortodonti</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pengalaman">Telpon</label>
+                                                    <input type="text" class="form-control" id="pengalaman"
+                                                        placeholder="+62" />
+                                                </div>
 
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      3
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      4
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      5
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      6
-                    </td>
-                    <td>
-                     
-                    </td>
-                    <td>
-                    
-                    </td>
-                    <td>
-                      
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Dokter</th>
+                                        <th>Gender</th>
+                                        <th>Keahlian</th>
+                                        <th>Telpon</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Drg. Nasywa Khalaila</td>
+                                        <td>Perempuan</td>
+                                        <td>Spesialis Bedah Mulut</td>
+                                        <td>081345632784</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Drg. Zora Khansa</td>
+                                        <td>Perempuan</td>
+                                        <td>Spesialis Kedokteran Gigi Anak</td>
+                                        <td>089576363562</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Drg. Siti Aisyah</td>
+                                        <td>Perempuan</td>
+                                        <td>Spesialis Konservasi Gigi</td>
+                                        <td>0812543668976</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Drg. Parida Ristiani</td>
+                                        <td>Perempuan</td>
+                                        <td>Spesialis Ortodonti</td>
+                                        <td>081345632784</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
             </div>
-          </div>
+            <!-- /.row -->
         </div>
-      </div>
-      <!-- /.container-fluid -->
+        <!-- /.container-fluid -->
     </section>
+        </div>
+        <!-- /.card-body -->
+      </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">Admin Napz</a>.</strong>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.2.0

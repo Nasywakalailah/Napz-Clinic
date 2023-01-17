@@ -4,7 +4,7 @@ function kirim() {
     let form = document.getElementById("form");
 
      if (inp_nama == "admin" && inp_pass == "integrity") {
-         location.replace("index.html");
+         location.replace("dashboard.html");
         alert("Login berhasil")
      }
      else{
