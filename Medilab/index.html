@@ -293,6 +293,10 @@
     <section id="appointment" class="appointment section-bg">
       <div class="container">
 
+       <!-- ======= Booking Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
         <div class="section-title">
           <h2>Booking</h2>
         </div>
@@ -320,22 +324,18 @@
                 <option value="Doctor 3">Veneer Gigi</option>
             </select>
           </div>
-          <form class="was-validated">
             <div class="mb-3">
-              <label>Keluhan</label>
-              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-              <div class="invalid-feedback">
-                Please enter a message in the textarea.
-              </div>
+              <label>Keluhan :</label>
+              <textarea class="form-control"></textarea>
             </div>
         </div>
         <div class="custom-control custom-checkbox">
           <label for="colFormLabel" class="col-sm-2 col-form-label">Pembayaran</label>
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <input type="radio" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Cash</label>
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <input type="radio" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Transfer</label>
-           <input type="checkbox" class="custom-control-input" id="customCheck1">
+           <input type="radio" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">eWallet</label>
       </div>
         <div class="row">
@@ -347,12 +347,12 @@
          <div class="form-group row">
            <label for="colFormLabel" class="col-sm-2 col-form-label">Umur</label>
              <div class="col-sm-10">
-               <input type="number" class="form-control" id="colFormLabel" placeholder="">
+               <input type="text" class="form-control" id="colFormLabel" placeholder="">
            </div>
            <div class="form-group row">
              <label for="colFormLabel" class="col-sm-2 col-form-label">Telpon/HP</label>
                <div class="col-sm-10">
-                <input type="number" class="form-control" id="colFormLabel" placeholder="Telpon Anda">
+                <input type="text" class="form-control" id="colFormLabel" placeholder="+62">
              </div>
              <div class="form-group row">
                <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
@@ -366,12 +366,14 @@
           <div class="form-group mt-3">
             <div class="validate"></div>
           </div>
-          <button><a href="index.html">Submit</a></button>
+          <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="booking2.html">
+            <a href="booking2.html">submit</a>
+          </button>
         </form>
 
       </div>
+    </section><!-- End Booking Section -->
     </section><!-- End Appointment Section -->
-
     <!-- ======= Layanan Section ======= -->
     <section id="departments" class="departments">
       <div class="container">
@@ -860,7 +862,8 @@
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email">
+              <input type="submit" value="Subscribe">
             </form>
           </div>
 
